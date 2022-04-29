@@ -49,6 +49,9 @@ dependencies {
 
     implementation googleDependencies.material
 
+    implementation microsoftDependencies.windowState
+    implementation microsoftDependencies.twoPaneLayout
+
     androidTestImplementation testDependencies.androidxTestCore
     androidTestImplementation testDependencies.androidxTestRules
     androidTestImplementation testDependencies.androidxTestRunner

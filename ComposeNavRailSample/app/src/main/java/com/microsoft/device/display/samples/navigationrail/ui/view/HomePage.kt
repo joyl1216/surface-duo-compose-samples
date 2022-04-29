@@ -118,7 +118,7 @@ fun Pane2(
     // Retrieve selected image information
     val selectedImage = imageId?.let { DataProvider.getImage(imageId) }
 
-    // Set up back press action to return to pane 1 and clear image selection
+//    // Set up back press action to return to pane 1 and clear image selection
     val onBackPressed = {
         unselectImage()
     }
