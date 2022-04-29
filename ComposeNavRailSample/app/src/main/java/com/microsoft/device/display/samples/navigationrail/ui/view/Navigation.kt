@@ -27,9 +27,7 @@ import com.microsoft.device.display.samples.navigationrail.R
 import com.microsoft.device.display.samples.navigationrail.models.DataProvider
 import com.microsoft.device.display.samples.navigationrail.models.Image
 import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryBottomNav
-import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryNavRail
 import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryTopBar
-import com.microsoft.device.dualscreen.twopanelayout.navigateToPane2
 
 // Dp values for UI design
 private val GALLERY_HORIZ_PADDING = 16.dp
@@ -127,29 +125,23 @@ fun NavGraphBuilder.addGalleryGraph(
  * component (BottomNavigation or NavigationRail)
  */
 @ExperimentalAnimationApi
-@ExperimentalMaterialApi
 @ExperimentalFoundationApi
 @Composable
 fun ShowWithNav(
-    isDualScreen: Boolean,
-    isDualPortrait: Boolean,
     imageId: Int?,
     updateImageId: (Int?) -> Unit,
+    selectImageId: (Int?) -> Unit,
     currentRoute: String,
     updateRoute: (String) -> Unit
 ) {
     val navController = rememberNavController()
-
     // Use navigation rail when dual screen (more space), otherwise use bottom navigation
     Scaffold(
         bottomBar = {
-            if (!isDualScreen)
-                GalleryBottomNav(navController, navDestinations, updateImageId, updateRoute)
+            GalleryBottomNav(navController, navDestinations, updateImageId, updateRoute)
         },
     ) { paddingValues ->
         Row(Modifier.padding(paddingValues)) {
-            if (isDualScreen)
-                GalleryNavRail(navController, navDestinations, updateImageId, updateRoute)
             NavHost(
                 modifier = Modifier.onGloballyPositioned {
                     // Once layouts have been positioned, check that nav controller is at correct
@@ -172,7 +164,7 @@ fun ShowWithNav(
             ) {
                 addGalleryGraph(
                     currentImageId = imageId,
-                    onImageSelected = { id -> onImageSelected(id, updateImageId, isDualPortrait) },
+                    onImageSelected = { id -> onImageSelected(id, selectImageId) },
                     horizontalPadding = GALLERY_HORIZ_PADDING
                 )
             }
@@ -184,12 +176,7 @@ fun ShowWithNav(
  * When an image in a gallery is selected, update the id of the currently selected image and
  * show the detail view of the item
  */
-private fun onImageSelected(id: Int, updateImageId: (Int?) -> Unit, isDualPortrait: Boolean) {
+private fun onImageSelected(id: Int, updateImageId: (Int?) -> Unit) {
     // Update image id
     updateImageId(id)
-
-    // Navigate to ItemDetailView (pane 2) if not showing two panes
-    if (!isDualPortrait) {
-        navigateToPane2()
-    }
 }

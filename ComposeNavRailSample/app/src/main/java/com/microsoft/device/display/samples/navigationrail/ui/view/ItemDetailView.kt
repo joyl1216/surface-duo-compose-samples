@@ -16,22 +16,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.DpRect
 import androidx.compose.ui.unit.ExperimentalUnitApi
 import com.microsoft.device.display.samples.navigationrail.R
 import com.microsoft.device.display.samples.navigationrail.models.Image
-import com.microsoft.device.dualscreen.twopanelayout.navigateToPane1
 
 /**
  * Show the image and details for the selected gallery item. If no item is selected, show
  * a placeholder view explaining how to open the detail view.
  *
- * @param isDualPortrait: true if device is in dual portrait mode
- * @param isDualLandscape: true if device is in dual landscape mode
- * @param foldIsOccluding: true if a fold is present and it occludes content, false otherwise
- * @param foldBoundsDp: the bounds of a fold in the form of an Android Rect
- * @param windowHeight: full height in dp of the window this view is being shown in
  * @param selectedImage: currently selected image
  * @param currentRoute: current route in gallery NavHost
  */
@@ -39,11 +31,6 @@ import com.microsoft.device.dualscreen.twopanelayout.navigateToPane1
 @ExperimentalMaterialApi
 @Composable
 fun ItemDetailView(
-    isDualPortrait: Boolean,
-    isDualLandscape: Boolean,
-    foldIsOccluding: Boolean,
-    foldBoundsDp: DpRect,
-    windowHeight: Dp,
     selectedImage: Image? = null,
     currentRoute: String,
 ) {
@@ -52,10 +39,6 @@ fun ItemDetailView(
 
     // If no images are selected, show "select image" message or navigate back to gallery view
     if (selectedImage == null) {
-        if (isDualPortrait)
-            PlaceholderView(gallerySection)
-        else
-            navigateToPane1()
         return
     }
 
@@ -66,11 +49,6 @@ fun ItemDetailView(
         ItemImage(Modifier.align(Alignment.TopCenter), selectedImage)
         ItemDetailsDrawer(
             image = selectedImage,
-            isDualLandscape = isDualLandscape,
-            isDualPortrait = isDualPortrait,
-            foldIsOccluding = foldIsOccluding,
-            foldBoundsDp = foldBoundsDp,
-            windowHeight = windowHeight,
             gallerySection = gallerySection,
         )
     }

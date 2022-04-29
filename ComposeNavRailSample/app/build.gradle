@@ -42,9 +42,6 @@ dependencies {
     implementation androidxDependencies.ktxCore
     implementation androidxDependencies.appCompat
 
-    implementation microsoftDependencies.twoPaneLayout
-    implementation microsoftDependencies.windowState
-
     implementation composeDependencies.composeMaterial
     implementation composeDependencies.composeRuntime
     implementation composeDependencies.navigationCompose
