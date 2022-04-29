@@ -1,84 +1,48 @@
----
-page_type: sample
-name: Surface Duo - Jetpack Compose samples
-languages:
-- kotlin
-products:
-- surface-duo
-description: "Samples showing how to use Jetpack Compose to achieve dual-screen user interface patterns."
-urlFragment: all
----
-![build-test-check](https://github.com/microsoft/surface-duo-compose-samples/actions/workflows/build_test_check.yml/badge.svg) ![Compose Version](https://img.shields.io/badge/Jetpack%20Compose-1.1.1-brightgreen)
+# Navigation Rail
 
-# Surface Duo Jetpack Compose Samples
-
-This repo contains samples built with Jetpack Compose for the Microsoft Surface Duo and other large screen and foldable devices. These samples demonstrate our [dual-screen user interface patterns](https://docs.microsoft.com/dual-screen/introduction#dual-screen-app-patterns) with the new UI framework.
-
-Please read the [code of conduct](CODE_OF_CONDUCT.md) and [contribution guidelines](CONTRIBUTING.md).
+This sample is built with Jetpack Compose, the new UI framework in Android.
 
 ## Getting Started
 
-When importing the code samples into Android Studio, use the repository directory as the base directory of the project. This lets you access and run all of the sample modules from within the same project.
+To learn how to load apps on the Surface Duo emulator, see the [documentation](https://docs.microsoft.com/dual-screen/android), and follow [the blog](https://devblogs.microsoft.com/surface-duo).
 
-To learn how to load apps on the Surface Duo emulator, see the [documentation](https://docs.microsoft.com/dual-screen/android), and follow [our blog](https://devblogs.microsoft.com/surface-duo).
+## Features
 
-Please check out our page on [Jetpack Compose for Microsoft Surface Duo](https://docs.microsoft.com/dual-screen/android/jetpack/compose/) for more details.
+The sample showcases how to incorporate the [NavigationRail](https://material.io/components/navigation-rail) component into a Jetpack Compose application for large screen and foldable devices.
 
-## Prerequisites
+### Dynamic navigation components
 
-- Jetpack Compose version: `1.1.1`
+When the app is spanned and the screen size is larger, it uses a **NavigationRail**.
 
-- Jetpack WindowManager version: `1.0.0`
+![Lakes gallery dual portrait](screenshots/dual_portrait_lakes_placeholder.png)
+![Animals gallery dual landscape](screenshots/dual_landscape_animals.png)
 
-- Android Studio version: Bumblebee `2021.1.1`
+When the app is unspanned, however, it switches back to a **BottomNavigation** bar.
 
-## Microsoft Compose Libraries
+![Birds gallery single portrait](screenshots/single_portrait_birds.png)
+![Rocks gallery single landscape](screenshots/single_landscape_rocks.png)
 
-The samples are built with Microsoft Compose libraries, [TwoPaneLayout](https://github.com/microsoft/surface-duo-compose-sdk/tree/main/TwoPaneLayout), [WindowState](https://github.com/microsoft/surface-duo-compose-sdk/tree/main/WindowState) and [ComposeTesting](https://github.com/microsoft/surface-duo-compose-sdk/tree/main/ComposeTesting).
+### Hinge-aware content drawer
 
-## Contents
+The app features a custom content drawer component, similar to [BottomSheetScaffold](https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#BottomSheetScaffold(kotlin.Function1,androidx.compose.ui.Modifier,androidx.compose.material.BottomSheetScaffoldState,kotlin.Function0,kotlin.Function1,kotlin.Function0,androidx.compose.material.FabPosition,kotlin.Boolean,androidx.compose.ui.graphics.Shape,androidx.compose.ui.unit.Dp,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.Dp,kotlin.Function1,kotlin.Boolean,androidx.compose.ui.graphics.Shape,androidx.compose.ui.unit.Dp,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,kotlin.Function1)), that adds a `Spacer` to the drawer content if it's being rendered across the hinge.
 
-| Sample | | Description |
-|---|:---:|---|
-| [ComposeGallery](https://github.com/microsoft/surface-duo-compose-samples/tree/main/ComposeGallery) | ![ComposeGallery app icon](screenshots/compose_gallery.svg) | Sample with a Microsoft Surface Duo theme that shows how to use the [List Detail](https://docs.microsoft.com/dual-screen/introduction#list-detail) app pattern. |
-| | |
-| [CompanionPane](https://github.com/microsoft/surface-duo-compose-samples/tree/main/CompanionPane) | ![CompanionPane app icon](screenshots/companion_pane.svg) | Photo editor sample that shows how to build the [Companion Pane](https://docs.microsoft.com/dual-screen/introduction#companion-pane) app pattern in Jetpack Compose. |
-| | |
-| [ExtendedCanvas](https://github.com/microsoft/surface-duo-compose-samples/tree/main/ExtendedCanvas) | ![ExtendedCanvas app icon](screenshots/extended_canvas.svg) | Map sample that shows how to build the [Extended Canvas](https://docs.microsoft.com/dual-screen/introduction#extended-canvas) app pattern in Jetpack Compose. |
-| | |
-| [ListDetail](https://github.com/microsoft/surface-duo-compose-samples/tree/main/ListDetail) | ![ListDetail app icon](screenshots/list_detail.svg) | Photo gallery sample that shows how to build the [List Detail](https://docs.microsoft.com/dual-screen/introduction#list-detail) app pattern in Jetpack Compose. |
-| | |
-| [DualView](https://github.com/microsoft/surface-duo-compose-samples/tree/main/DualView) | ![DualView app icon](screenshots/dual_view.svg) | Restaurant finder sample that shows how to build the [Dual View](https://docs.microsoft.com/dual-screen/introduction#dual-view) app pattern in Jetpack Compose. |
-| | |
-| [Two Page](https://github.com/microsoft/surface-duo-compose-samples/tree/main/TwoPage) | ![TwoPage app icon](screenshots/two_page.svg) | E-reader sample that shows how to build the [Two Page](https://docs.microsoft.com/dual-screen/introduction#two-page) app pattern in Jetpack Compose. |
-| | |
-| [NavigationRail](https://github.com/microsoft/surface-duo-compose-samples/tree/main/NavigationRail) | ![NavigationRail app icon](screenshots/navigation_rail.svg) | Nature-themed sample that shows how to use a combination of [NavigationRail](https://material.io/components/navigation-rail) and [BottomNavigation](https://material.io/components/bottom-navigation) when building apps for large screen and foldable devices in Jetpack Compose. |
-| | |
+![Demo of content drawer](screenshots/content_drawer_animation.gif)
 
-## Social links
+### Navigation hierarchy
 
-| Blog post | Video |
-|---|---|
-| [Write foldable tests quickly with Test Kit](https://devblogs.microsoft.com/surface-duo/foldable-ui-test-kit/) | [Twitch #63: Test Kit for foldable apps](https://www.youtube.com/watch?v=3I0qU5SeUBM) |
-| [Jetpack Compose UI testing](https://devblogs.microsoft.com/surface-duo/jetpack-compose-ui-test/) | [Twitch #59: Jetpack Compose testing](https://www.youtube.com/watch?v=Q3lDz7PjO7U) |
-| [Jetpack Compose WindowState preview](https://devblogs.microsoft.com/surface-duo/jetpack-compose-windowstate-preview/) | [Twitch #53: Jetpack Compose WindowState for foldable devices](https://www.youtube.com/watch?v=qOIliow-uS4) |
-| [Get started with Jetpack Compose](https://devblogs.microsoft.com/surface-duo/get-started-with-jetpack-compose/) | [Twitch #44: Get started with Jetpack Compose](https://www.youtube.com/watch?v=ijXDWDtdiIE) |
-| [Jetpack Compose Navigation Rail](https://devblogs.microsoft.com/surface-duo/jetpack-compose-navigation-rail/) | [Twitch #42: Jetpack Compose Navigation Rail](https://www.youtube.com/watch?v=pdoIyOU7Suk)
-| [New TwoPaneLayout Compose library preview](https://devblogs.microsoft.com/surface-duo/jetpack-compose-twopanelayout-preview/) | [Twitch #25: TwoPaneLayout preview for Jetpack Compose](https://www.youtube.com/watch?v=Q66bR2jKdrg) |
-| [Jetpack Compose foldable and dual-screen development](https://devblogs.microsoft.com/surface-duo/jetpack-compose-foldable-samples) | [Twitch #9: Jetpack Compose samples](https://www.youtube.com/watch?v=m8bMjFhBbN8) |
-| [Jetpack Compose on Microsoft Surface Duo](https://devblogs.microsoft.com/surface-duo/jetpack-compose-dual-screen-sample/) | N/A|
+The app uses two sources of navigation.
 
-## Related links
+To switch between gallery and item views, we use the built in navigation support from `TwoPaneLayout`.
 
-- [Surface Duo Compose SDK](https://github.com/microsoft/surface-duo-compose-sdk/)
-- [Jetpack Window Manager samples](https://github.com/microsoft/surface-duo-window-manager-samples)
-- [SDK samples (Java)](https://github.com/microsoft/surface-duo-sdk-samples)
-- [SDK samples (Kotlin)](https://github.com/microsoft/surface-duo-sdk-samples-kotlin)
-- [Unity samples](https://github.com/microsoft/surface-duo-sdk-unity-samples)
-- [Xamarin samples](https://github.com/microsoft/surface-duo-sdk-xamarin-samples)
-- [Flutter samples](https://github.com/microsoft/surface-duo-sdk-samples-flutter)
-- [React Native samples](https://github.com/microsoft/react-native-dualscreen)
-- [Web samples](https://docs.microsoft.com/dual-screen/web/samples)
+![TwoPaneLayout navigation logic](screenshots/twopanelayout.png)
+
+To switch between the gallery categories, we use a `NavHostController` and `NavHost`paried with the current navigation component.
+
+![NavHost navigation logic](screenshots/navhost.png)
+
+## Attributions
+
+The images used in the NavigationRail sample are licensed under [© eakarat], [© nerudol], [© DedMityay], [© tibor13], [© Harry Collins], [© Tony Baggett], [© WildMedia], [© Vlasto Opatovsky], [© Lakeview Images], [© viktoriya89], [© dudlajzov], [© zkbld], [© muraviov], [© phototrip.cz], [© gpisano71], [© Mike Mareen], [	© Fokke], [© ronnybas], [© Piotr Krzeslak], [© shaiith], [© aiisha], [© Andrew Mayovskyy], [© Andrey Armyagov], [© Наталья Босяк] / stock.adobe.com
 
 ## Contributing
 
