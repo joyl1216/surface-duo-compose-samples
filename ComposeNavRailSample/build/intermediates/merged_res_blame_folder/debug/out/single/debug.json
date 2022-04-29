@@ -1,0 +1,514 @@
+[
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_6.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_6.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable-xxxhdpi_plants_placeholder.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/generated/res/pngs/debug/drawable-xxxhdpi/plants_placeholder.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_10.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_10.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_10.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_10.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_medium.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_medium.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_6.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_6.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_sun_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/sun_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_birds_placeholder.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/birds_placeholder.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_location_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/location_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_3.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_3.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_extralight_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_extralight_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_4.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_4.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_4.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_4.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_bold_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_bold_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_11.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_11.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_9.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_9.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_7.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_7.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_2.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_2.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_7.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_7.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_6.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_6.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable-xhdpi_plants_placeholder.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/generated/res/pngs/debug/drawable-xhdpi/plants_placeholder.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_light_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_light_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_light.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_light.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_1.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_1.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_medium.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_medium.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_4.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_4.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable-mdpi_plants_placeholder.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/generated/res/pngs/debug/drawable-mdpi/plants_placeholder.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_1.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_1.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_thin_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_thin_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_4.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_4.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_extrabold.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_extrabold.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_arrow_back_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/arrow_back_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_9.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_9.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_10.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_10.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_2.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_2.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_7.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_7.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_regular.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_regular.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_light.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_light.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_black.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_black.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_6.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_6.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_1.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_1.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_10.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_10.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_extralight.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_extralight.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_8.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_8.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable-xxhdpi_plants_placeholder.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/generated/res/pngs/debug/drawable-xxhdpi/plants_placeholder.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_5.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_5.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable-ldpi_plants_placeholder.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/generated/res/pngs/debug/drawable-ldpi/plants_placeholder.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_black.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_black.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_4.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_4.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_3.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_3.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_light_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_light_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_7.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_7.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_thin.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_thin.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_11.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_11.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_size_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_size_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_1.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_1.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_wingspan_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/wingspan_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_11.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_11.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_2.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_2.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_bold_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_bold_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_9.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_9.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_2.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_2.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_medium_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_medium_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_10.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_10.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_9.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_9.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_9.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_9.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lakes_placeholder.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lakes_placeholder.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_thin.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_thin.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_black_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_black_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_semibold_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_semibold_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_1.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_1.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_6.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_6.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_12.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_12.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_3.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_3.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_12.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_12.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_8.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_8.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_12.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_12.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_sea_level_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/sea_level_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animals_placeholder.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animals_placeholder.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_3.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_3.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_3.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_3.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_bold.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_bold.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_8.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_8.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_5.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_5.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_8.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_8.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_thin_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_thin_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_medium_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_medium_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_7.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_7.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_5.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_5.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_2.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_2.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable-anydpi-v24_plants_placeholder.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/generated/res/pngs/debug/drawable-anydpi-v24/plants_placeholder.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_11.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_11.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_12.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_12.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_5.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_5.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_bird_5.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/bird_5.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rocks_placeholder.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rocks_placeholder.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_black_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_black_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_chemical_constituents_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/chemical_constituents_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable-hdpi_plants_placeholder.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/generated/res/pngs/debug/drawable-hdpi/plants_placeholder.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_bold.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_bold.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_lake_11.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/lake_11.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_rock_12.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/rock_12.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_plant_height_icon.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/plant_height_icon.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_roboto_regular.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/roboto_regular.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_semibold.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_semibold.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/font_montserrat_extrabold_italic.ttf.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/font/montserrat_extrabold_italic.ttf"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_drawer_pill.xml.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/drawer_pill.xml"
+    },
+    {
+        "merged": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/build/intermediates/merged_res/debug/drawable_animal_8.png.flat",
+        "source": "/Users/joyliu/Projects/Github-public-repo/surface-duo-compose-samples/NavigationRail/src/main/res/drawable/animal_8.png"
+    }
+]
