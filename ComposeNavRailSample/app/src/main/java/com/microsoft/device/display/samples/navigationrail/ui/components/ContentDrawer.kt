@@ -84,6 +84,8 @@ fun BoxWithConstraintsScope.ContentDrawer(
     modifier: Modifier = Modifier,
     expandedHeightPct: Float,
     collapsedHeightPct: Float,
+    foldIsOccluding: Boolean = false,
+    foldBoundsDp: DpRect,
     windowHeightDp: Dp = 0.dp,
     foldBottomPaddingDp: Dp = 0.dp,
     hiddenContent: @Composable ColumnScope.() -> Unit,
@@ -104,7 +106,13 @@ fun BoxWithConstraintsScope.ContentDrawer(
     // Calculate the height of each drawer component (top content, fold, bottom content) - dp
     val expandHeightDp = with(LocalDensity.current) { expandHeightPx.toDp() }
     val collapseHeightDp = with(LocalDensity.current) { collapseHeightPx.toDp() }
-    val topContentMaxHeightDp: Dp = collapseHeightDp
+    val foldSizeDp = foldBoundsDp.height
+    val bottomContentMaxHeightDp = windowHeightDp - foldBoundsDp.bottom
+    val topContentMaxHeightDp: Dp = if (foldIsOccluding) {
+        expandHeightDp - foldSizeDp - bottomContentMaxHeightDp
+    } else {
+        collapseHeightDp
+    }
 
     BoxWithConstraints(
         modifier = modifier
@@ -116,8 +124,9 @@ fun BoxWithConstraintsScope.ContentDrawer(
     ) {
         // Check if a spacer needs to be included to render content around an occluding hinge
         val minSpacerHeight = calculateSpacerHeight(
+            foldIsOccluding,
             swipeableState,
-            foldBottomPaddingDp.value
+            foldSizeDp.value + foldBottomPaddingDp.value
         ).toInt().dp
 
         // Calculate drawer height in dp based on swipe state
@@ -142,7 +151,7 @@ fun BoxWithConstraintsScope.ContentDrawer(
                 modifier = Modifier.padding(horizontal = paddingDp),
             ) {
                 Column(fillWidth.requiredHeight(topContentMaxHeightDp)) { peekContent() }
-//                Spacer(Modifier.requiredHeight(minSpacerHeight))
+                Spacer(Modifier.requiredHeight(minSpacerHeight))
                 hiddenContent()
             }
         }
@@ -162,10 +171,17 @@ fun BoxWithConstraintsScope.ContentDrawer(
  */
 @ExperimentalMaterialApi
 private fun calculateSpacerHeight(
+    foldIsOccluding: Boolean,
     swipeableState: SwipeableState<DrawerState>,
     fullHeight: Float
 ): Float {
-    return 0f
+    if (!foldIsOccluding)
+        return 0f
+
+    val isExpanding = swipeableState.progress.to == DrawerState.Expanded
+    val progressHeight = (fullHeight * swipeableState.progress.fraction)
+
+    return if (isExpanding) progressHeight else fullHeight - progressHeight
 }
 
 /**
