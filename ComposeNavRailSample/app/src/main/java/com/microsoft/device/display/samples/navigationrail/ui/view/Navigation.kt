@@ -28,6 +28,7 @@ import com.microsoft.device.display.samples.navigationrail.models.DataProvider
 import com.microsoft.device.display.samples.navigationrail.models.Image
 import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryBottomNav
 import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryTopBar
+import com.microsoft.device.dualscreen.twopanelayout.navigateToPane2
 
 // Dp values for UI design
 private val GALLERY_HORIZ_PADDING = 16.dp
@@ -128,13 +129,14 @@ fun NavGraphBuilder.addGalleryGraph(
 @ExperimentalFoundationApi
 @Composable
 fun ShowWithNav(
+    isDualPortrait: Boolean,
     imageId: Int?,
     updateImageId: (Int?) -> Unit,
-    selectImageId: (Int?) -> Unit,
     currentRoute: String,
     updateRoute: (String) -> Unit
 ) {
     val navController = rememberNavController()
+
     // Use navigation rail when dual screen (more space), otherwise use bottom navigation
     Scaffold(
         bottomBar = {
@@ -164,7 +166,7 @@ fun ShowWithNav(
             ) {
                 addGalleryGraph(
                     currentImageId = imageId,
-                    onImageSelected = { id -> onImageSelected(id, selectImageId) },
+                    onImageSelected = { id -> onImageSelected(id, updateImageId, isDualPortrait) },
                     horizontalPadding = GALLERY_HORIZ_PADDING
                 )
             }
@@ -176,7 +178,12 @@ fun ShowWithNav(
  * When an image in a gallery is selected, update the id of the currently selected image and
  * show the detail view of the item
  */
-private fun onImageSelected(id: Int, updateImageId: (Int?) -> Unit) {
+private fun onImageSelected(id: Int, updateImageId: (Int?) -> Unit, isDualPortrait: Boolean) {
     // Update image id
     updateImageId(id)
+
+    // Navigate to ItemDetailView (pane 2) if not showing two panes
+    if (!isDualPortrait) {
+        navigateToPane2()
+    }
 }
