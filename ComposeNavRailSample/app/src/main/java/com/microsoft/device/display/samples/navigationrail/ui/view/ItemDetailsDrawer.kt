@@ -42,8 +42,10 @@ import com.microsoft.device.display.samples.navigationrail.ui.components.InfoBox
 
 private lateinit var BodyTextStyle: TextStyle
 private lateinit var SubtitleTextStyle: TextStyle
+private const val EXPANDED_HEIGHT_2PANE = 0.7f
 private const val EXPANDED_HEIGHT_1PANE_PORTRAIT = 0.55f
 private const val EXPANDED_HEIGHT_1PANE_LANDSCAPE = 0.65f
+private const val COLLAPSED_HEIGHT_2PANE = 0.4f
 private const val COLLAPSED_HEIGHT_1PANE_PORTRAIT = 0.28f
 private const val COLLAPSED_HEIGHT_1PANE_LANDSCAPE = 0.357f
 private val PILL_TOP_PADDING = 8.dp
@@ -60,6 +62,11 @@ private const val LONG_DETAILS_LINE_HEIGHT = 32f
 @Composable
 fun BoxWithConstraintsScope.ItemDetailsDrawer(
     image: Image,
+    isDualLandscape: Boolean,
+    isDualPortrait: Boolean,
+    foldIsOccluding: Boolean,
+    foldBoundsDp: DpRect,
+    windowHeight: Dp,
     gallerySection: GallerySections?,
 ) {
     val isPortrait = LocalConfiguration.current.orientation == Configuration.ORIENTATION_PORTRAIT
@@ -68,7 +75,11 @@ fun BoxWithConstraintsScope.ItemDetailsDrawer(
     val expandedHeightPct: Float
     val collapsedHeightPct: Float
     when {
-        isPortrait -> {
+        isDualLandscape -> {
+            expandedHeightPct = EXPANDED_HEIGHT_2PANE
+            collapsedHeightPct = COLLAPSED_HEIGHT_2PANE
+        }
+        isDualPortrait || isPortrait -> {
             expandedHeightPct = EXPANDED_HEIGHT_1PANE_PORTRAIT
             collapsedHeightPct = COLLAPSED_HEIGHT_1PANE_PORTRAIT
         }
@@ -79,14 +90,21 @@ fun BoxWithConstraintsScope.ItemDetailsDrawer(
     }
 
     // Set text size for drawer based on orientation
-
-    BodyTextStyle = MaterialTheme.typography.body1
-    SubtitleTextStyle = MaterialTheme.typography.subtitle1
+    if (isDualLandscape) {
+        BodyTextStyle = MaterialTheme.typography.body2
+        SubtitleTextStyle = MaterialTheme.typography.subtitle2
+    } else {
+        BodyTextStyle = MaterialTheme.typography.body1
+        SubtitleTextStyle = MaterialTheme.typography.subtitle1
+    }
 
     ContentDrawer(
         expandedHeightPct = expandedHeightPct,
         collapsedHeightPct = collapsedHeightPct,
+        foldIsOccluding = foldIsOccluding && isDualLandscape,
+        foldBoundsDp = foldBoundsDp,
         foldBottomPaddingDp = LONG_DETAILS_TOP_PADDING,
+        windowHeightDp = windowHeight,
         hiddenContent = { ItemDetailsLong(image.details) }
     ) {
         DrawerPill()
