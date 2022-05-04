@@ -12,7 +12,6 @@ import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -27,6 +26,7 @@ import com.microsoft.device.display.samples.navigationrail.R
 import com.microsoft.device.display.samples.navigationrail.models.DataProvider
 import com.microsoft.device.display.samples.navigationrail.models.Image
 import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryBottomNav
+import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryNavRail
 import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryTopBar
 import com.microsoft.device.dualscreen.twopanelayout.navigateToPane2
 
@@ -129,6 +129,7 @@ fun NavGraphBuilder.addGalleryGraph(
 @ExperimentalFoundationApi
 @Composable
 fun ShowWithNav(
+    isDualScreen: Boolean,
     isDualPortrait: Boolean,
     imageId: Int?,
     updateImageId: (Int?) -> Unit,
@@ -140,10 +141,13 @@ fun ShowWithNav(
     // Use navigation rail when dual screen (more space), otherwise use bottom navigation
     Scaffold(
         bottomBar = {
-            GalleryBottomNav(navController, navDestinations, updateImageId, updateRoute)
+            if (!isDualScreen)
+                GalleryBottomNav(navController, navDestinations, updateImageId, updateRoute)
         },
     ) { paddingValues ->
         Row(Modifier.padding(paddingValues)) {
+            if (isDualScreen)
+                GalleryNavRail(navController, navDestinations, updateImageId, updateRoute)
             NavHost(
                 modifier = Modifier.onGloballyPositioned {
                     // Once layouts have been positioned, check that nav controller is at correct

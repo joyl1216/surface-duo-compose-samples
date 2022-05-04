@@ -40,6 +40,7 @@ fun NavigationRailApp(windowState: WindowState) {
     val updateImageId: (Int?) -> Unit = { newId -> imageId = newId }
 
     NavigationRailAppContent(
+        isDualScreen = windowState.isDualScreen(),
         isDualPortrait = windowState.isDualPortrait(),
         isDualLandscape = windowState.isDualLandscape(),
         foldIsOccluding = windowState.foldIsOccluding,
@@ -58,6 +59,7 @@ fun NavigationRailApp(windowState: WindowState) {
 @ExperimentalFoundationApi
 @Composable
 fun NavigationRailAppContent(
+    isDualScreen: Boolean,
     isDualPortrait: Boolean,
     isDualLandscape: Boolean,
     foldIsOccluding: Boolean,
@@ -71,7 +73,7 @@ fun NavigationRailAppContent(
     TwoPaneLayout(
         paneMode = TwoPaneMode.HorizontalSingle,
         pane1 = {
-            Pane1(isDualPortrait, imageId, updateImageId, currentRoute, updateRoute)
+            Pane1(isDualScreen, isDualPortrait, imageId, updateImageId, currentRoute, updateRoute)
         },
         pane2 = {
             Pane2(
@@ -100,13 +102,14 @@ fun NavigationRailAppContent(
 @ExperimentalFoundationApi
 @Composable
 fun Pane1(
+    isDualScreen: Boolean,
     isDualPortrait: Boolean,
     imageId: Int?,
     updateImageId: (Int?) -> Unit,
     currentRoute: String,
     updateRoute: (String) -> Unit
 ) {
-    ShowWithNav(isDualPortrait, imageId, updateImageId, currentRoute, updateRoute)
+    ShowWithNav(isDualScreen, isDualPortrait, imageId, updateImageId, currentRoute, updateRoute)
 }
 
 @ExperimentalUnitApi
