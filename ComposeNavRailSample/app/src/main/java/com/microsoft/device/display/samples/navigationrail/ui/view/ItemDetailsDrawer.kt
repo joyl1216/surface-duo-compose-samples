@@ -29,8 +29,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.DpRect
 import androidx.compose.ui.unit.ExperimentalUnitApi
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
@@ -51,7 +49,6 @@ private val NAME_TOP_PADDING = 8.dp
 private val LOCATION_TOP_PADDING = 10.dp
 private val LOCATION_BETWEEN_PADDING = 5.dp
 private val CONDITIONS_TOP_PADDING = 15.dp
-private val LONG_DETAILS_TOP_PADDING = 35.dp
 private val LONG_DETAILS_BOTTOM_PADDING = 10.dp
 private const val LONG_DETAILS_LINE_HEIGHT = 32f
 
@@ -78,15 +75,13 @@ fun BoxWithConstraintsScope.ItemDetailsDrawer(
         }
     }
 
-    // Set text size for drawer based on orientation
-
+    // Set text size for drawer
     BodyTextStyle = MaterialTheme.typography.body1
     SubtitleTextStyle = MaterialTheme.typography.subtitle1
 
     ContentDrawer(
         expandedHeightPct = expandedHeightPct,
         collapsedHeightPct = collapsedHeightPct,
-        foldBottomPaddingDp = LONG_DETAILS_TOP_PADDING,
         hiddenContent = { ItemDetailsLong(image.details) }
     ) {
         DrawerPill()
