@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.BoxWithConstraintsScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
@@ -22,7 +21,6 @@ import androidx.compose.material.BottomSheetScaffoldDefaults
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.SwipeableState
 import androidx.compose.material.rememberSwipeableState
 import androidx.compose.material.swipeable
 import androidx.compose.runtime.Composable
@@ -36,9 +34,7 @@ import androidx.compose.ui.semantics.SemanticsPropertyKey
 import androidx.compose.ui.semantics.SemanticsPropertyReceiver
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.DpRect
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.height
 import com.microsoft.device.display.samples.navigationrail.R
 
 private const val CONTENT_HORIZ_PADDING_PERCENT = 0.06f
@@ -59,22 +55,11 @@ enum class DrawerState { Collapsed, Expanded }
  * Custom drawer (bottom aligned) with a rounded corner shape that swipes between a collapsed
  * "peek" view and a more expanded view that displays all of the content
  *
- * Supports foldable displays by splitting the "peekContent" and "hiddenContent" around an occluding
- * fold
- *
  * @param modifier: optional Modifier to be applied to the layout
  * @param expandedHeightPct: height of the drawer when expanded, expressed as percentage of maximum possible
  * height (must be > 0, <= 1)
  * @param collapsedHeightPct: height of the drawer when collapsed, expressed as percentage of maximum possible
  * height (must be > 0, <= 1)
- * @param foldIsOccluding: optional param for foldable support, indicates whether there is a hinge
- * that occludes content in the current layout
- * @param foldBoundsDp: optional param for foldable support, indicates the coordinates of the boundary
- * of a fold
- * @param windowHeightDp: optional param for foldable support, indicates the full height of the window
- * in which a fold and the content drawer are being displayed
- * @param foldBottomPaddingDp: optional param for foldable support, will be added as padding below the fold to
- * make content more accessible to users
  * @param hiddenContent: the content that will only be shown when the drawer is expanded
  * @param peekContent: the content that will be shown even when the drawer is collapsed
  */
@@ -84,8 +69,6 @@ fun BoxWithConstraintsScope.ContentDrawer(
     modifier: Modifier = Modifier,
     expandedHeightPct: Float,
     collapsedHeightPct: Float,
-    windowHeightDp: Dp = 0.dp,
-    foldBottomPaddingDp: Dp = 0.dp,
     hiddenContent: @Composable ColumnScope.() -> Unit,
     peekContent: @Composable ColumnScope.() -> Unit,
 ) {
@@ -114,12 +97,6 @@ fun BoxWithConstraintsScope.ContentDrawer(
             .testTag(stringResource(R.string.content_drawer)),
         contentAlignment = Alignment.TopStart,
     ) {
-        // Check if a spacer needs to be included to render content around an occluding hinge
-        val minSpacerHeight = calculateSpacerHeight(
-            swipeableState,
-            foldBottomPaddingDp.value
-        ).toInt().dp
-
         // Calculate drawer height in dp based on swipe state
         val swipeOffsetDp = with(LocalDensity.current) { swipeableState.offset.value.toDp() }
         val drawerHeight = expandHeightDp - swipeOffsetDp
@@ -142,30 +119,10 @@ fun BoxWithConstraintsScope.ContentDrawer(
                 modifier = Modifier.padding(horizontal = paddingDp),
             ) {
                 Column(fillWidth.requiredHeight(topContentMaxHeightDp)) { peekContent() }
-//                Spacer(Modifier.requiredHeight(minSpacerHeight))
                 hiddenContent()
             }
         }
     }
-}
-
-/**
- * Helper method to calculate the animated height of the spacer used for foldable support. Height
- * is progressively increased or decreased based on the swipe state.
- *
- * @param foldIsOccluding: whether or not a fold is present and occluding content
- * @param swipeableState: swipeable state of the component that contains a spacer
- * @param fullHeight: the desired full height of the spacer when the parent component has been swiped
- * to the expanded state
- *
- * @return the height of the spacer for the current swipe progress
- */
-@ExperimentalMaterialApi
-private fun calculateSpacerHeight(
-    swipeableState: SwipeableState<DrawerState>,
-    fullHeight: Float
-): Float {
-    return 0f
 }
 
 /**

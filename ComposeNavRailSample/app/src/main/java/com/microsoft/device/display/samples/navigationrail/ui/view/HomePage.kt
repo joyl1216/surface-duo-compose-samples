@@ -8,18 +8,22 @@ package com.microsoft.device.display.samples.navigationrail.ui.view
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.ExperimentalMaterialApi
+import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.ExperimentalUnitApi
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.microsoft.device.display.samples.navigationrail.models.DataProvider
+import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryBottomNav
 import com.microsoft.device.display.samples.navigationrail.ui.components.ItemTopBar
 
 @ExperimentalAnimationApi
@@ -56,7 +60,7 @@ fun NavigationRailAppContent(
     updateRoute: (String) -> Unit
 ) {
     val navController = rememberNavController()
-    SinglePaneLayout(navController,imageId, updateImageId, currentRoute, updateRoute)
+    SinglePaneLayout(navController, imageId, updateImageId, currentRoute, updateRoute)
 }
 
 @ExperimentalUnitApi
@@ -73,7 +77,7 @@ internal fun SinglePaneLayout(
 ) {
     val selectImage: (Int?) -> Unit = { newId ->
         updateImageId(newId)
-        navHostController.navigate("detail")
+        navHostController.navigate(DETAIL_ROUTE)
     }
 
     val unselectImage: () -> Unit = {
@@ -81,30 +85,25 @@ internal fun SinglePaneLayout(
         navHostController.popBackStack()
     }
 
-    NavHost(
-        navController = navHostController,
-        startDestination = "list"
-    ) {
-        composable("list") {
-            Pane1(imageId, selectImage, updateImageId, currentRoute, updateRoute)
-        }
-        composable("detail") {
-            Pane2(imageId, unselectImage, currentRoute)
+    val inGalleryDestination = navHostController.currentDestination?.route != DETAIL_ROUTE
+
+    Scaffold(
+        bottomBar = {
+            if (inGalleryDestination)
+                GalleryBottomNav(navHostController, navDestinations, updateImageId, updateRoute)
+        },
+    ) { paddingValues ->
+        NavHost(
+            modifier = Modifier.padding(paddingValues),
+            navController = navHostController,
+            startDestination = navDestinations.first().route
+        ) {
+            addGalleryGraph(imageId, selectImage, GALLERY_HORIZ_PADDING)
+            composable(DETAIL_ROUTE) {
+                Pane2(imageId, unselectImage, currentRoute)
+            }
         }
     }
-}
-
-@ExperimentalAnimationApi
-@ExperimentalFoundationApi
-@Composable
-fun Pane1(
-    imageId: Int?,
-    selectImage: (Int?) -> Unit,
-    updateImage: (Int?) -> Unit,
-    currentRoute: String,
-    updateRoute: (String) -> Unit
-) {
-    ShowWithNav(imageId, updateImage, selectImage, currentRoute, updateRoute)
 }
 
 @ExperimentalUnitApi
@@ -128,7 +127,7 @@ fun Pane2(
         selectedImage = selectedImage,
         currentRoute = currentRoute
     )
-    // If only one pane is being displayed, show a "back" icon
+    // Show a "back" icon
     ItemTopBar(
         onClick = { onBackPressed() }
     )

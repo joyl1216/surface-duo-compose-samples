@@ -5,42 +5,33 @@
 
 package com.microsoft.device.display.samples.navigationrail.ui.view
 
-import android.util.Log
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Scaffold
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavGraphBuilder
-import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import com.microsoft.device.display.samples.navigationrail.R
 import com.microsoft.device.display.samples.navigationrail.models.DataProvider
 import com.microsoft.device.display.samples.navigationrail.models.Image
-import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryBottomNav
 import com.microsoft.device.display.samples.navigationrail.ui.components.GalleryTopBar
 
 // Dp values for UI design
-private val GALLERY_HORIZ_PADDING = 16.dp
+val GALLERY_HORIZ_PADDING = 16.dp
 
 // Nav destinations for app
 val navDestinations = GallerySections.values()
+
+// Detail view route
+val DETAIL_ROUTE = "detail"
 
 enum class GallerySections(
     @StringRes val title: Int,
     @DrawableRes val icon: Int,
     val route: String,
     val list: List<Image>,
-    @DrawableRes val placeholderImage: Int,
     @DrawableRes val fact1Icon: Int,
     @StringRes val fact1Description: Int,
     @DrawableRes val fact2Icon: Int? = null,
@@ -51,7 +42,6 @@ enum class GallerySections(
         R.drawable.plant_icon,
         "plants",
         DataProvider.plantList,
-        R.drawable.plants_placeholder,
         R.drawable.sun_icon,
         R.string.sun,
         R.drawable.plant_height_icon,
@@ -62,7 +52,6 @@ enum class GallerySections(
         R.drawable.bird_icon,
         "birds",
         DataProvider.birdList,
-        R.drawable.birds_placeholder,
         R.drawable.wingspan_icon,
         R.string.bird_size,
     ),
@@ -71,7 +60,6 @@ enum class GallerySections(
         R.drawable.animal_icon,
         "animals",
         DataProvider.animalList,
-        R.drawable.animals_placeholder,
         R.drawable.animal_size_icon,
         R.string.animal_size,
     ),
@@ -80,7 +68,6 @@ enum class GallerySections(
         R.drawable.lake_icon,
         "lakes",
         DataProvider.lakeList,
-        R.drawable.lakes_placeholder,
         R.drawable.sea_level_icon,
         R.string.sea_level,
     ),
@@ -89,7 +76,6 @@ enum class GallerySections(
         R.drawable.rock_icon,
         "rocks",
         DataProvider.rockList,
-        R.drawable.rocks_placeholder,
         R.drawable.chemical_constituents_icon,
         R.string.composition
     )
@@ -118,65 +104,4 @@ fun NavGraphBuilder.addGalleryGraph(
             }
         }
     }
-}
-
-/**
- * Show the NavHost with the gallery composables, surrounded by a top bar and the appropriate nav
- * component (BottomNavigation or NavigationRail)
- */
-@ExperimentalAnimationApi
-@ExperimentalFoundationApi
-@Composable
-fun ShowWithNav(
-    imageId: Int?,
-    updateImageId: (Int?) -> Unit,
-    selectImageId: (Int?) -> Unit,
-    currentRoute: String,
-    updateRoute: (String) -> Unit
-) {
-    val navController = rememberNavController()
-    // Use navigation rail when dual screen (more space), otherwise use bottom navigation
-    Scaffold(
-        bottomBar = {
-            GalleryBottomNav(navController, navDestinations, updateImageId, updateRoute)
-        },
-    ) { paddingValues ->
-        Row(Modifier.padding(paddingValues)) {
-            NavHost(
-                modifier = Modifier.onGloballyPositioned {
-                    // Once layouts have been positioned, check that nav controller is at correct
-                    // current route. If not, try to navigate to the current route (unless nav
-                    // graph hasn't been created yet).
-                    if (navController.currentDestination?.route != currentRoute) {
-                        try {
-                            navController.navigate(currentRoute)
-                        } catch (e: NullPointerException) {
-                            // Nav graph may be null if this is the first run through
-                            Log.i(
-                                "Navigation Rail Sample",
-                                "Caught the following exception: ${e.message}"
-                            )
-                        }
-                    }
-                },
-                navController = navController,
-                startDestination = currentRoute,
-            ) {
-                addGalleryGraph(
-                    currentImageId = imageId,
-                    onImageSelected = { id -> onImageSelected(id, selectImageId) },
-                    horizontalPadding = GALLERY_HORIZ_PADDING
-                )
-            }
-        }
-    }
-}
-
-/**
- * When an image in a gallery is selected, update the id of the currently selected image and
- * show the detail view of the item
- */
-private fun onImageSelected(id: Int, updateImageId: (Int?) -> Unit) {
-    // Update image id
-    updateImageId(id)
 }
